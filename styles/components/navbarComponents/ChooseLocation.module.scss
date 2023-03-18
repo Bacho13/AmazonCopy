@@ -1,0 +1,160 @@
+$yellow: #f4bf76;
+$darkYellow: #f2a742;
+$orange: #f19d38;
+$brightYellow: #ffd814;
+$black: #000000;
+$darkBlue: #131921;
+$white: #ffffff;
+$amazBackground: #e3e6e6;
+
+.main {
+  top: 50px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans";
+  color: $black;
+}
+.window {
+  width: 375px;
+  height: 375px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 14px 0 rgba(15, 17, 17, 0.5);
+
+  header {
+    width: 100%;
+    background-color: rgb(240, 242, 242);
+    padding: 16px 24px;
+    font-size: 10px;
+    line-height: 24px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  section {
+    padding: 16px 24px;
+    p {
+      color: #565959;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 8px;
+    }
+    button {
+      width: 100%;
+      background-color: $brightYellow;
+      padding: 6px 1px;
+      outline: 0;
+      border-radius: 8px;
+      border: none;
+      font-size: 13px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e7c310;
+    }
+  }
+}
+
+.lineContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 7px 0;
+
+  p {
+    margin-top: 7px;
+    background-color: #fff;
+    z-index: +1;
+    padding: 0 10px;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #777c7ce1;
+  position: absolute;
+}
+.zipSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  input {
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    width: 215px;
+
+    border: 1px solid #888c8c;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(15, 17, 17, 0.15) inset;
+    outline: 0;
+  }
+  input:focus {
+    outline: 4px solid rgba(2, 225, 255, 0.281);
+  }
+  .zipButton {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+    background: #fff;
+    height: 31px;
+    border: 1px solid #d5d9d9;
+  }
+  .zipButton:hover {
+    background-color: #f8f8f8;
+  }
+}
+.select {
+  border: 1px solid #d5d9d9;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.7);
+  background: #f0f2f2;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+.select:hover {
+  background: #e3e4e4;
+}
+.select:focus {
+  outline: 4px solid rgba(2, 225, 255, 0.281);
+}
+.option {
+  padding: 10px;
+}
+.doneButton {
+  width: 20%;
+  background-color: $brightYellow;
+  padding: 6px 1px;
+  outline: 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.doneButton:hover {
+  background-color: #e7c310;
+}
+.bottomSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 24px;
+}
+
+.error {
+  color: red;
+}

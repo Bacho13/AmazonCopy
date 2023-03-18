@@ -1,0 +1,120 @@
+$yellow: #f4bf76;
+$darkYellow: #f2a742;
+$orange: #f19d38;
+$brightYellow: #ffd814;
+$black: #000000;
+$darkBlue: #131921;
+$white: #ffffff;
+$amazBackground: #e3e6e6;
+$lightGray: #ddd;
+$darkGrey: #c9cccc;
+.main {
+  width: 100%;
+  min-width: 375px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: 0px solid;
+  margin: 0 8px;
+}
+
+.categories {
+  //
+  padding: 0 10px;
+  height: 40px;
+  background-color: #f3f3f3;
+  color: $black;
+  border-radius: 4px 0px 0px 4px;
+  font-size: 12px;
+  line-height: 33px;
+  border: none;
+  cursor: pointer;
+  z-index: +1;
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.categories:hover {
+  background-color: $lightGray;
+}
+.categories:focus {
+  outline: 3px solid $darkYellow;
+}
+.categories:focus + .main {
+  outline: none;
+}
+
+.select {
+  position: absolute;
+  height: 250px;
+  top: 50px;
+  left: 235px;
+  padding: 0 10px;
+  background-color: $white;
+  color: $black;
+  overflow-y: scroll;
+  border: 1px solid $lightGray;
+  border-radius: 8px;
+  font-family: "PT Sans";
+
+  option {
+    cursor: pointer;
+    padding: 4px 0;
+    text-transform: capitalize;
+  }
+}
+
+.searchInput {
+  width: 100%;
+  border: 0;
+  text-indent: 8px;
+  direction: ltr;
+  line-height: 15px;
+  padding: 7px 10px 10px 0;
+  font-size: 15px;
+  font-family: "PT Sans";
+}
+
+.searchIcon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4bf76;
+  border-radius: 0px 4px 4px 0px;
+  border: 0;
+  cursor: pointer;
+}
+.searchIcon:hover {
+  background: $orange;
+}
+.searchIcon:focus {
+  outline: 3px solid $darkYellow;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+.searchInput:focus + .darkCover {
+  display: block;
+}
+.darkCover {
+  width: 100%;
+  height: 93.8vh;
+  background-color: #000000;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+}
+
+.mainYellowOutline {
+  outline: 3px solid $orange;
+  border-radius: 5px;
+  border: none;
+}

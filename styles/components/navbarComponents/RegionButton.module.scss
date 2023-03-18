@@ -1,0 +1,38 @@
+$yellow: #ff9900;
+$black: #000000;
+$darkBlue: #131921;
+$white: #ffffff;
+$amazBackground: #e3e6e6;
+
+.regionButton {
+  padding: 0 10px;
+  height: 50px;
+  color: $white;
+  font-family: "PT Sans";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 5px;
+  border: 1px solid transparent;
+}
+.regionButton:hover {
+  border: 1px solid $white;
+  cursor: pointer;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.firstLine {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  width: 60px;
+}
+.secondLine {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}

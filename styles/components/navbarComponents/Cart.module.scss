@@ -1,0 +1,56 @@
+$yellow: #f4bf76;
+$darkYellow: #f2a742;
+$orange: #f19d38;
+$brightYellow: #ffd814;
+$black: #000000;
+$darkBlue: #131921;
+$white: #ffffff;
+$amazBackground: #e3e6e6;
+$lightGray: #ddd;
+$darkGrey: #c9cccc;
+
+.main {
+  height: 50px;
+  padding: 0 10px;
+  color: white;
+  font-family: "PT Sans";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: relative;
+  cursor: pointer;
+}
+.main:hover {
+  border: 1px solid white;
+}
+.cartQuant {
+  position: absolute;
+  color: $orange;
+  font-size: 16px;
+  font-weight: 700;
+  left: 25px;
+  top: 5px;
+}
+
+.firstLine {
+  margin: auto 0;
+}
+.secondLine {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.arrow {
+  fill: #a7acb2;
+  width: 18px;
+  margin-top: 10px;
+  margin-top: 4px;
+}

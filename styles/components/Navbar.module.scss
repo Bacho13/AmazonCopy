@@ -1,0 +1,34 @@
+$yellow: #ff9900;
+$black: #000000;
+$darkBlue: #131921;
+$white: #ffffff;
+$amazBackground: #e3e6e6;
+
+.main {
+  width: 100%;
+  height: 60px;
+  background-color: $darkBlue;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  margin: 0 1px;
+  padding: 0 6px;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.logo:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.logoImage {
+  width: 100px;
+  height: 30px;
+  display: block;
+}
