@@ -9,15 +9,6 @@ import { store } from "../redux/store";
 
 // import styles from "@/styles/Home.module.css";
 
-export const getStaticProps = async () => {
-  const res = await fetch("https://dummyjson.com/products/categories");
-  const data = await res.json();
-
-  return {
-    props: { data },
-  };
-};
-
 export default function Home({ data }) {
   const dispatch = useDispatch();
   const [latitude, setLatitude] = useState(null);
@@ -65,4 +56,15 @@ export default function Home({ data }) {
       <main></main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch("https://dummyjson.com/products/categories");
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
