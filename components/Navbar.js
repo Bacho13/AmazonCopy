@@ -9,6 +9,7 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import { useSelector } from "react-redux";
 import ChooseLocation from "./navbarComponents/ChooseLocation";
 import RightSideOfTheNav from "./navbarComponents/RightSideOfTheNav";
+import UnderNav from "./navbarComponents/UnderNav";
 
 function Navbar() {
   const user = useSelector((state) => state.user);
@@ -44,6 +45,7 @@ function Navbar() {
         <Search />
         <RightSideOfTheNav />
       </div>
+      <UnderNav />
     </>
   );
 }
